@@ -19,11 +19,6 @@ Vue.use(VueRouter)
     name: 'Portfolio',
     component: () => import(/* webpackChunkName: "about" */ '../views/Portfolio.vue')
   },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')
-  },
 ]
 
 const router = new VueRouter({

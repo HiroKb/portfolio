@@ -6,7 +6,6 @@
                 <div>
                     <router-link to="/about" class="header__menu">About</router-link>
                     <router-link to="/portfolio" class="header__menu">Portfolio</router-link>
-                    <router-link to="/contact" class="header__menu">Contact</router-link>
                 </div>
             </div>
         </header>
