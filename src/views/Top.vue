@@ -61,7 +61,7 @@
 
     .bloc-logo .logo-mask {
         position: absolute;
-        top: 0;
+        top: -1px;
         left: 0;
         background-size: 400px;
         background-image: url("../assets/topimage.png");
