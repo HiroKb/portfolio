@@ -4,8 +4,8 @@
             <div class="d-flex container justify-space-between" >
                 <router-link to="/" class="header__menu">Top</router-link>
                 <div>
-                    <router-link to="/about" class="header__menu">About</router-link>
                     <router-link to="/portfolio" class="header__menu">Portfolio</router-link>
+                    <router-link to="/about" class="header__menu">About</router-link>
                 </div>
             </div>
         </header>
@@ -38,6 +38,7 @@ export default {
         position: fixed;
         width: 100%;
         z-index: 1;
+        background-color: rgba(255, 255, 255, .8);
     }
     .header__menu{
         position: relative;
