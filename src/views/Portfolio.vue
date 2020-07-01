@@ -49,7 +49,10 @@
     import SkillChip from "../components/SkillChip";
     export default {
         name: "Portfolio",
-        components: {SectionTitle,SkillChip}
+        components: {SectionTitle,SkillChip},
+        mounted() {
+            scrollTo(0, 0)
+        }
     }
 </script>
 

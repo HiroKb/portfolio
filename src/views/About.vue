@@ -45,7 +45,10 @@
     import SectionTitle from "../components/SectionTitle";
     export default {
         name: 'About',
-        components:{SkillChip, SectionTitle}
+        components:{SkillChip, SectionTitle},
+        mounted() {
+            scrollTo(0, 0)
+        }
     }
 </script>
 
