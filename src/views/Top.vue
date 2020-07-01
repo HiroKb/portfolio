@@ -66,5 +66,23 @@
         background-image: url("../assets/topimage.png");
         text-indent: -9999px;
     }
+
+    @media screen and (max-width: 599px){
+        .container{
+            height: 80%;
+        }
+        .bloc-logo{
+            width: 300px;
+            height: 160px;
+        }
+        .bloc-logo canvas,
+        .bloc-logo .logo-mask {
+            width: 300px;
+            height: 160px;
+        }
+        .bloc-logo .logo-mask{
+            background-size: 312px;
+        }
+    }
 </style>
 
