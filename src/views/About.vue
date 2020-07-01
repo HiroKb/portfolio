@@ -2,7 +2,7 @@
     <v-container class="d-flex flex-column align-center">
 
         <div class="profile d-flex flex-column align-center">
-            <section-title class="mb-0">Profile</section-title>
+            <section-title>Profile</section-title>
             <v-img
                     alt="プロフィールイメージ"
                     src="../assets/icon.jpg"
@@ -17,7 +17,7 @@
         </div>
 
         <div class="skill d-flex flex-column align-center mt-12">
-            <section-title class="mb-0">Skills</section-title>
+            <section-title>Skills</section-title>
             <div class="skill__section">
                 <skill-chip color="#F16528">HTML</skill-chip>
                 <skill-chip color="#2C65F1" class="ml-2">CSS</skill-chip>
@@ -35,7 +35,6 @@
 
         <div class="contact d-flex flex-column align-center mt-12">
             <section-title>Contact</section-title>
-            <p class="mb-0">お問い合わせ・ご連絡は下記メールアドレスへお願いいたします</p>
             <a href="mailto:hiro.k.b.921@gmail.com">hiro.k.b.921@gmail.com</a>
         </div>
     </v-container>
@@ -59,5 +58,11 @@
     }
     .skill__section:not(:first-of-type){
         margin-top: 8px;
+    }
+
+    @media screen and (max-width: 599px){
+        .profile{
+            margin-top: 80px;
+        }
     }
 </style>
