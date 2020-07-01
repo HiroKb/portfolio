@@ -1,7 +1,7 @@
 <template>
     <v-container class="d-flex flex-column align-center">
         <div class="profile d-flex flex-column align-center">
-            <p class="section-title mb-0">Profile</p>
+            <section-title class="mb-0">Profile</section-title>
             <v-img
                     alt="プロフィールイメージ"
                     src="../assets/icon.jpg"
@@ -15,27 +15,30 @@
             <p class="profile__text">独学でプログラミング学習中です。</p>
         </div>
         <div class="skill d-flex flex-column align-center mt-6">
-            <p class="section-title mb-0">Skills</p>
+            <section-title class="mb-0">Skills</section-title>
             <div class="skill__section">
-                <v-chip color="#F16528" class="skill__chip">HTML</v-chip>
-                <v-chip color="#2C65F1" class="skill__chip">CSS</v-chip>
+                <skill-chip color="#F16528">HTML</skill-chip>
+                <skill-chip color="#2C65F1" class="ml-2">CSS</skill-chip>
             </div>
             <div class="skill__section">
-                <v-chip color="#F7DF1F" class="skill__chip">JavaScript</v-chip>
-                <v-chip color="#21609B" class="skill__chip">jQuery</v-chip>
-                <v-chip color="#41B882" class="skill__chip">Vue.js</v-chip>
+                <skill-chip color="#F7DF1F">JavaScript</skill-chip>
+                <skill-chip color="#21609B" class="ml-2">jQuery</skill-chip>
+                <skill-chip color="#41B882" class="ml-2">Vue.js</skill-chip>
             </div>
             <div class="skill__section">
-                <v-chip color="#6181B6" class="skill__chip">PHP</v-chip>
-                <v-chip color="#F72C21" class="skill__chip">Laravel</v-chip>
+                <skill-chip color="#6181B6">PHP</skill-chip>
+                <skill-chip color="#F72C21" class="ml-2">Laravel</skill-chip>
             </div>
         </div>
     </v-container>
 </template>
 
 <script>
+    import SkillChip from "../components/SkillChip";
+    import SectionTitle from "../components/SectionTitle";
     export default {
         name: 'About',
+        components:{SkillChip, SectionTitle}
     }
 </script>
 
@@ -48,13 +51,5 @@
     }
     .skill__section:not(:first-of-type){
         margin-top: 8px;
-    }
-    .skill__chip{
-        font-size: 16px;
-        font-weight: bold;
-        color: white;
-    }
-    .skill__chip:not(:first-child){
-        margin-left: 8px;
     }
 </style>
