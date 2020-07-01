@@ -27,8 +27,17 @@ export default {
 </script>
 
 <style>
+    .section-title{
+        font-weight: bold;
+        font-size: 24px;
+        color: gray;
+        opacity: .8;
+    }
     .container{
         max-width: 1200px !important;
+    }
+    p{
+        color: gray;
     }
 </style>
 <style scoped>
