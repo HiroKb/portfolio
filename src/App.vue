@@ -10,7 +10,9 @@
             </div>
         </header>
         <v-main>
-            <router-view/>
+            <transition mode="out-in">
+                <router-view/>
+            </transition>
         </v-main>
     </v-app>
 </template>
@@ -67,5 +69,28 @@ export default {
     .router-link-exact-active::after{
         opacity: .8;
         transition: opacity .5s;
+    }
+
+    .v-enter {
+        transform: translate(0, 100vh);
+        opacity: 0;
+    }
+    .v-enter-to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    .v-enter-active {
+        transition: all .5s ease-in-out 0s;
+    }
+    .v-leave {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    .v-leave-to {
+        transform: translate(0, -100vh);
+        opacity: 0;
+    }
+    .v-leave-active {
+        transition: all .4s ease-in-out 0s;
     }
 </style>
