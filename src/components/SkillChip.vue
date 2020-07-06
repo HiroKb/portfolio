@@ -17,8 +17,8 @@
 
 <style scoped>
     .chip{
-        font-size: 16px;
+        font-size: 16px !important;
         font-weight: bold;
-        color: white;
+        color: white !important;
     }
 </style>
