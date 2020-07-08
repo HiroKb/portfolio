@@ -57,7 +57,7 @@
                                 <skill-chip color="#D34A47" class="ml-2">gulp</skill-chip>
                             </div>
                             <p class="font-weight-bold mt-4 mb-2">Link: <a href="https://sample1.hirokb.com">CafePage</a></p>
-                            <p class="font-weight-bold">Code/Infra: <a href="https://github.com/HiroKb/fictional-cafe">GitHub</a></p>
+                            <p class="font-weight-bold">Code: <a href="https://github.com/HiroKb/fictional-cafe">GitHub</a></p>
                         </div>
                     </v-col>
                 </v-row>
